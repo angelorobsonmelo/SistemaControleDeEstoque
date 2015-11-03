@@ -1,0 +1,70 @@
+<div class="row">
+    <div style="margin-bottom: 20px"></div>
+    <div class="panel panel-primary ">
+        <div class="panel-heading"><h3 class="panel-title">Cliente</h3></div>
+        <div class="panel-body">
+            <div >
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="col-sm-2 text-bold">Nome</div>
+                        <div class="col-sm-4">{{clienteVisto.nome}}</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="col-sm-2 text-bold">Telefone</div>
+                        <div class="col-sm-4">{{clienteVisto.telefone}}</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="col-sm-2 text-bold">Email</div>
+                        <div class="col-sm-4">{{clienteVisto.email}}</div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="col-sm-2 text-bold">CNPJ</div>
+                        <div class="col-sm-4">{{clienteVisto.cnpj}}</div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="col-sm-2 text-bold">Setor</div>
+                        <div class="col-sm-4">{{clienteVisto.setor}}</div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="col-sm-2 text-bold">CNAE</div>
+                        <div class="col-sm-4">{{clienteVisto.cnae}}</div>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="text-bold">Pesquisas</div>
+
+                            <div class="well well-sm">
+                                <div ng-repeat="pesquisa in clienteVisto.pesquisas">
+                                    <i class="fa fa-asterisk"></i> {{pesquisa.descricao}}
+                                </div>
+
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
